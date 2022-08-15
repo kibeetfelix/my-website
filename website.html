@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-</head>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></head>
 <body>
     <section class="header">
         <nav>
             <a href="website.html"><img src="/images/svg/Color logo - no background.svg"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -23,6 +24,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     <div class="text-box">
         <h1>County's Biggest University</h1>
@@ -30,6 +32,18 @@
         <a href="" class="hero-btn"> visit us to know more</a>
     </div>
     </section>
-  <script src="website.js"></script>  
+  <!------JAVASCRIPT FOR TOGGLE MENU------- -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+  </script> 
+
 </body>
 </html>
