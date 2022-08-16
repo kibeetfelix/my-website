@@ -104,7 +104,7 @@ nav .fa{
     }
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #013030;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -122,5 +122,54 @@ nav .fa{
     }
     .nav-links ul{
         padding: 30px;
+    }
+}
+
+
+/* -----course-------- */
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: hsl(0, 3%, 27%);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #85b8be;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px o;
+}
+/* ---shadow when arrow moves on top of Intermediate, Degee & Post Graduate---- */
+.course-col:hover{
+    box-shadow: 0 0 20px 0px;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
     }
 }
