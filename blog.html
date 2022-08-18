@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"></head>
+<body>
+
+
+    <section class="sub-header">
+        <nav>
+            <a href="website.html"><img src="/Logo Files/For Web/svg/Color logo - no background.svg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates And Online Programs For 2022</h1>
+    </section>
+
+<!-------blog page Content------ -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="/images/certificate.jpg" alt="">
+            <h1>Our Certificates and Online Programs For 2022</h1>
+            <h2>Undergraduate Certificates, Diplomas, and Degrees</h2>
+            <p>These awards usually take four years or less to complete. The actual completion time depends on how much time a student can commit to their studies. Part-time students, for example, may require more than four years for an undergraduate award.
+                Certificate. These are academic programs of nine to 30 credits that are completed in a year or less by full-time students. Some programs provide specialized training for people who already have diplomas or degrees. Others are for those who want to quickly complete a program that leads to a specific job.
+                Diploma. An academic program generally of 30 to 72 credits intended to provide students with skills leading directly to a specific job.
+                Associate Degree. An award that normally requires at least two but less than four years of full-time college work. There are different types of associate degrees with varying transferability.
+                Bachelor's Degree. An award that normally requires at least four but not more than six years of full-time college work. Also includes bachelor's degrees that are completed in three years.</p>
+            <br>
+            <h2>Graduate Certificates and Degrees</h2>
+            <p>Entering one of these programs generally requires prior completion of an undergraduate award.
+
+                Post-Baccalaureate Certificate. An award that requires completion of an organized program of study requiring 18 credit hours beyond the bachelor's. Designed for those with a bachelor's degree who do not meet the academic requirements of a master's degree.
+                Graduate Degree. A degree awarded for education at a level beyond the bachelor's degree. State universities offer graduate certificates, master's degrees, and specialist degrees in various professional and liberal arts fields.
+                Master's Degree. An award that requires the completion of a program of study of at least one but not more than two of years of full-time academic work beyond the bachelor's degree.
+                Post-Master's Certificate. An award that requires completion of an organized program of study of 24 credit hours beyond the master's degree, but does not meet the requirements of academic degrees at the doctor's level.
+                Doctorate Degree. The highest award a student can earn for graduate study. The doctor's degree classification includes such degrees as Doctor of Education (Ed.D.), Doctor of Juridical Science (J.D.), Doctor of Public Health (D.P.H.), and the Doctor of Philosophy (Ph.D.).</p>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>31</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>64</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>17</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----footer--- -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>A university is an institution of higher education, usually comprising a college of <br>liberal arts and sciences and graduate and professional schools<br> and having the authority to confer degrees in various fields of study.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa fa-heart-o" ></i> Mulmasai Kibeet <br>felixkibeet@gmail.com </p>
+</section>
+
+
+  <!------JAVASCRIPT FOR TOGGLE MENU------- -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+  </script> 
+
+</body>
+</html>
